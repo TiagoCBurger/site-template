@@ -1,46 +1,47 @@
-# Modern React Site
+# Lupi Mídias - Landing Page
 
-A modern React site built with:
-- Vite for blazing-fast development and builds
-- TypeScript for type safety
-- shadcn/ui for beautiful, accessible UI components
-- Tailwind CSS for utility-first styling
+Landing page moderna para a Lupi Mídias, uma agência de marketing digital focada em resultados reais.
 
-## Getting Started
+## Tecnologias Utilizadas
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
-4. Open your browser at: `http://localhost:5173`
+- **Vite** - Ferramenta de build rápida e moderna
+- **React** - Biblioteca para construção de interfaces
+- **TypeScript** - Linguagem tipada para desenvolvimento seguro
+- **Tailwind CSS** - Framework CSS utilitário
+- **shadcn/ui** - Componentes UI acessíveis e customizáveis
 
-## Features
+## Características
 
-- Modern and responsive UI with shadcn/ui components
-- Dark mode and light mode support
-- Type-safe code with TypeScript
-- Fast development with Vite
+- **Design Dark Mode** - Layout moderno com tema escuro e luzes neon verde
+- **Responsivo** - Adaptado para todos os tamanhos de tela
+- **Acessível** - Seguindo padrões de acessibilidade web
+- **Animações Sutis** - Efeitos visuais para melhorar a experiência do usuário
 
-## Project Structure
+## Estrutura do Projeto
 
-- `src/` - Source code
-  - `components/` - Reusable UI components
-    - `ui/` - shadcn/ui components
-  - `lib/` - Utility functions and helpers
-  - `assets/` - Static assets
+- Seção Hero com apresentação da agência
+- Seção de Serviços oferecidos
+- Seção Sobre a empresa
+- Seção de Contato com formulário integrado
 
-## Adding More shadcn/ui Components
+## Como Executar
 
-You can add more shadcn/ui components as needed:
+1. Clone o repositório
+2. Instale as dependências: `npm install`
+3. Execute o servidor de desenvolvimento: `npm run dev`
+4. Acesse o site em: `http://localhost:5173`
 
-```bash
-npx shadcn-ui@latest add [component-name]
-# Example: npx shadcn-ui@latest add card
-```
-
-## Building for Production
+## Build para Produção
 
 ```bash
 npm run build
 ```
 
-This will create an optimized build in the `dist` directory.
+O resultado ficará disponível na pasta `dist/`.
+
+## Customização
+
+Este projeto utiliza variáveis CSS para cores e temas, facilitando a customização do estilo. As principais configurações podem ser encontradas em:
+
+- `src/index.css` - Variáveis CSS e estilos base
+- `tailwind.config.js` - Configurações do Tailwind CSS

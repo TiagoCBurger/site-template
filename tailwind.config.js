@@ -16,6 +16,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -50,6 +54,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        neon: {
+          green: "#39FF14",
+          greenDark: "#32CD32",
+          glow: "#39FF1430",
+        },
+        lupi: {
+          dark: "#121212",
+          darker: "#0A0A0A",
+          light: "#FAFAFA",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,10 +79,25 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        glow: {
+          '0%, 100%': { boxShadow: '0 0 15px 5px rgba(57, 255, 20, 0.3)' },
+          '50%': { boxShadow: '0 0 25px 10px rgba(57, 255, 20, 0.5)' },
+        },
+        pulse: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0.5 },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "glow": "glow 2s infinite",
+        "pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      backgroundImage: {
+        'grid-pattern': 'linear-gradient(rgba(57, 255, 20, 0.1) 1px, transparent 1px), linear-gradient(to right, rgba(57, 255, 20, 0.1) 1px, transparent 1px)',
+        'neon-gradient': 'radial-gradient(circle, rgba(57, 255, 20, 0.15) 0%, rgba(10, 10, 10, 0) 70%)',
+        'hero-pattern': 'linear-gradient(to bottom, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.95)), url("/bg-pattern.png")',
       },
     },
   },
